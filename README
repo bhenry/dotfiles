@@ -1,0 +1,3 @@
+#put following lines in .zshrc and uncomment; change if path to this file is different
+#export DOTS=$HOME/.dots
+#source $DOTS/main.sh
