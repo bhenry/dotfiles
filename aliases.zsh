@@ -54,3 +54,6 @@ alias start-mongo="rm /data/db/mongod.lock && mongod"
 #remote desktop on ubuntu
 alias rdp='rdesktop -u bhenry -p 12345 -g 1024x700 '
 
+#xcode iphone simulator
+alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+
