@@ -41,6 +41,10 @@ alias gco='git co'
 
 #emacs
 alias e="open -a /Applications/Emacs.app $1"
+alias edeps="lein deps :tree > /tmp/edeps.txt && e /tmp/edeps.txt"
+alias etree="tree > /tmp/tree.txt && e /tmp/tree.txt"
+alias emdeps="lein deps :tree > /tmp/edeps.txt && emacs /tmp/edeps.txt"
+alias emtree="tree > /tmp/tree.txt && emacs /tmp/tree.txt"
 
 #ubuntu remote desktop
 alias udp="Xnest -geometry 1024x768 :1& DISPLAY=:1 ssh -X brandons.homeip.net gnome-session"
@@ -57,3 +61,5 @@ alias rdp='rdesktop -u bhenry -p 12345 -g 1024x700 '
 #xcode iphone simulator
 alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
+#datomic browser console
+alias dat-console='bin/console -p 4444 dev datomic:dev://localhost:4334/'
